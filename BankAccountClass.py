@@ -10,6 +10,9 @@ class BankAccount:
     def __init__(self, bal):
         self.__balance = bal
 
+        #so we only have ONE attribute which is the balance from the user 
+
+
       # The deposit method makes a deposit into the
       # account.
 
@@ -20,6 +23,10 @@ class BankAccount:
       # from the account.
 
     def withdraw(self, amount):
+      #test that we don't want amount less than 0 
+      if amount <= 0:
+        print("You Fool!")
+      else: 
         if self.__balance >= amount:
             self.__balance -= amount
         else:

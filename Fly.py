@@ -1,22 +1,11 @@
 import InsectClass as i
 
-
-def main():
-       # Create an object from the Coin class.
-       my_distance = i.Insect()   # this creates an instance called 'my_coin' of the class 'Coin()'
-
-       # Display the side of the coin that is facing up.
-       print('This distance is:', my_distance.get_distance())   
-
-       # try 10 times and display the distance of the insect can fly
-       print('I am going to test the distance ten times:')
-       for count in range(10):
-           my_distance.toss()
-           
-           # Display the side of the coin that is facing up.
-           print('This distance is:', my_distance.get_distance())
+#create instance
+# 2,4 means the value of wings and legs  
+Fly = i.Insect(2,4)
+Fly.flight_length()
 
 
-# Call the main function.
+print("the insect can fly up to", Fly.get_miles(),"miles")
 
-main()
+
