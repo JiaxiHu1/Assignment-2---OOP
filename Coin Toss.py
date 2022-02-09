@@ -1,4 +1,7 @@
 import CoinClass as c
+#import the CoinClass.py file - import the name of the file 
+#not the class itself 
+#everything in the CoinClass file are avaialble here 
 
 
 # The main function.
