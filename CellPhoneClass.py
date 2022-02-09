@@ -30,14 +30,14 @@ class CellPhone:
         p = float(input("Enter the retail price:"))
     
 
-    def get_manufacture(self):
+    def get_manufacture(self,ma):
         return self.__manufacture 
     
 
-    def get_model(self):
+    def get_model(self,mo):
         return self.__model
 
     
-    def get_retail_price(self):
+    def get_retail_price(self,p):
         return self.__retail_price 
 
