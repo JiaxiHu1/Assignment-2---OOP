@@ -16,6 +16,11 @@ class BankAccount:
       # The deposit method makes a deposit into the
       # account.
 
+#function - deposit is mutator need more information and will change 
+#mutator method is a set method 
+#accessor method is a get method - only need self - get method 
+#self-attribute - instance attribute - belongs to a specific instance of a class 
+
     def deposit(self, amount):
         self.__balance += amount
 
@@ -37,7 +42,6 @@ class BankAccount:
 
     def get_balance(self):
         return self.__balance
-
 
 
     def __str__(self):
