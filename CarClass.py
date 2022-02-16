@@ -2,7 +2,7 @@ class car:
     def __init__(self,yr,mk,s):
         self.__year_model = yr
         self.__make = mk 
-        self.__speed = 0
+        self.__speed = s
     
     def set_year(self,yr):
         self.__year_model = yr 
