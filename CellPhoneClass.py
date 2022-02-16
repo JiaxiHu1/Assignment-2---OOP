@@ -10,25 +10,23 @@
 #set_retail_price 
 
 #3 gets to return the values 
-import random 
 
 class CellPhone: 
-    def __init__(ma,mo,p):
+    #attributes will be defined with the __init__
+    #every method is another define 
+    def __init__(self,ma,mo,p):
         self.__manufacture = ma
         self.__model = mo
         self.__retail_price = p 
     
-    def set_manufacture(ma): 
-        ma = input("Enter the manufacture name:")
+    def set_manufacture(self,ma):
+        self.__manufacture = ma 
     
-
-    def set_model(mo):
-        mo = input("Enter the model:")
-
+    def set_model(self,mo):
+        self.__model = mo 
     
-    def set_retail_price(p):
-        p = float(input("Enter the retail price:"))
-    
+    def set_price(self,p):
+        self.__price = p 
 
     def get_manufacture(self):
         return self.__manufacture 

@@ -8,13 +8,35 @@
 from datetime import date 
 
 class Student:
-    def __init__(self):
-        self.age = 0 
+    def __init__(self,dob,classi):
+        self.__dob = dob 
+        self.__classification = classi 
+        self.__registration = ""
+        self.__age = 0
     
-    def age(birthdate):
+    #age 
+    def age(self):
         today = date.today()
-        age = today.year - birthdate.year - ((today.month.today.day)) < (birthdate.month,birthdate.day)
-        return age
+        dob = self.__dob.split('/')
+        dob_yr = int(dob[2])
+        age = today.year - dob_yr
+        self.__age = age 
     
     def get_age(self):
-        return self.age 
+        return self.__age 
+
+    #registration time 
+    def reg_time(self):
+        if self.__classification == 'Senior':
+            self.__registration = '11/1 thru 11/3'
+        elif self.__classification == 'Junior':
+            self.__registration = '11/4 thru 11/6'
+        elif self.__classification == 'Sophomore':
+            self.__registration = '11/7 thru 11/9'
+        elif self.__classification == 'Freshman':
+            self.__registration = '11/10 thru 11/12'
+        else:
+            self.__registration = 'Please Enter Another Classification.'
+
+    def get_reg_time(self):
+        return self.__registration
